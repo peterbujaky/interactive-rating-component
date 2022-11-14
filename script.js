@@ -4,7 +4,7 @@ const thankYouDiv = document.getElementById("thankyoudiv");
 const thankYouImgDiv = document.getElementById("thankyouimg");
 const thankyouText = document.createElement("p");
 const thankYouImg = document.createElement("img");
-thankYouImg.src = "///C:/Users/DELL/Documents/Frontendmentor%20Challenges/interactive-rating-component-main/images/illustration-thank-you.svg"
+thankYouImg.src = "images/illustration-thank-you.svg"
 
 
             for (var i = 0; i < ratingButtons.length; i++ ) {
