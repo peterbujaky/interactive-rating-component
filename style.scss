@@ -1,0 +1,186 @@
+$color-text-primary: hsl(0, 0%, 100%);
+$color-text-tertiary: hsl(216, 12%, 54%);
+$color-btn-orange: hsl(25, 97%, 53%);
+$color-btn-grey: hsl(217, 12%, 63%);
+$color-dark-blue: hsl(216, 12%, 8%);
+
+@mixin spacing {
+    padding: 5rem 0;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+h3 {
+    color: $color-text-primary;
+    padding: 0 2rem;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+
+p {
+    color: $color-btn-grey;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.component {
+    background: radial-gradient(ellipse at top,  hsl(213, 19%, 18%), hsl(213, 19%, 14%),);
+    border-radius: 5%;
+    width: 80vw;
+    
+    
+}
+
+.icon-star {
+    background-color: hsl(213, 19%, 22%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rem;
+    height: 4rem;
+    width: 4rem;
+    margin: 3rem 2rem 0;
+}
+
+.img-star {
+    display: flex;
+    height: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+  
+//buttons
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .btn-rating {
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 22%);
+    border: none;
+    color: $color-text-primary;
+    width: 4.1rem;
+    height: 4.1rem;
+
+    &:hover {
+        background-color: $color-btn-orange;
+        cursor: pointer;
+    }
+
+    &:focus {
+        background-color: $color-btn-grey;
+    }
+  }
+
+  .btn-submit {
+    background-color: $color-btn-orange;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    margin: 0 2rem;
+    color: $color-text-primary;
+    padding: 1.5rem;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: $color-btn-orange;
+    }
+  }
+
+//Thank You section
+
+.thankyoudiv {
+    border-radius: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;
+    background-color: hsl(213, 19%, 22%);
+
+    p {
+        color: $color-btn-orange;
+        padding: .7rem 1.5rem;
+    }
+
+}
+
+.thankyouimg {
+    margin: 3rem 0 1.5rem 0;
+}
+
+
+//Media Queries
+
+  @media screen and (min-width: 481px) {
+    .component {
+      width: 70vw;
+    }
+    }
+
+    @media screen and (min-width: 585px) {
+        .component {
+          width: 60vw;
+        }
+        }
+    
+    @media screen and (min-width: 645px) {
+        .component {
+          width: 55vw;
+          max-width: 350px;
+        }
+        }
+    
+     @media screen and (min-width: 765px) {
+        .component {
+        width: 40vw;
+        }
+        }
+
+    @media screen and (min-width: 1024px) {
+            .component {
+            width: 35vw;
+            }
+            }
+
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        .component {
+            width: 25vw;
+                }
+                }
+
+                  
